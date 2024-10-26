@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(9, 110, 121, 1) 0%,
+    rgba(0, 255, 199, 1) 100%
+  );
+  height: 100%;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content {
+  width: 900px;
+  height: 550px;
+  display: flex;
+  position: relative;
+  border-radius: 20px;
+}
+
+.contentLeft {
+  display: flex;
+  width: 50%;
+  background-color: #b5e9ee;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px 0px 0px 20px;
+  justify-content: space-evenly;
+}
+.contentLeft p{
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.contentRight {
+  display: flex;
+  min-width: 50%;
+  background-color: #0d9180;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0px 20px 20px 0px;
+  justify-content: space-evenly;
+}
+.contentRight p{
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.diceSame {
+  position: absolute;
+  top: 88%;
+  left: 37%;
+}
+
+.winner p{
+  font-size: 64px;
+}
+
+.diceButton {
+  background-color: #021f3e;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  padding: 16px 48px;
+  transition: background-color 0.5s ease;
+  color: #f6f6f6;
+  font-size: 18px;
+}
+
+.diceButton:hover {
+  background-color: #357bc4;
+}
+
+.diceButton:disabled {
+  background-color: grey;
+}
